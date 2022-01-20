@@ -27,7 +27,7 @@
  ******************************************************************************/
 (function() {
     var a = -1;
-    window.RequestAnimationFrame = window.RequestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function(b) {
+    window.RequestAnimationFrame = window.RequestAnimationFrame || window.mozRequestAnimationFrame || window.requestAnimationFrame || window.msRequestAnimationFrame || function(b) {
         if (a === -1) {
             a = setTimeout(function() {
                 b();
