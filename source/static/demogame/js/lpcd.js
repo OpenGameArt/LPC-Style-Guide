@@ -1292,6 +1292,6 @@ LPCD.CHARS.derpy_bat = function(a, d) {
  window.onload = function() {
           //  alert(navigator.userAgent);
             if (navigator.userAgent.indexOf("Firefox") > 0) {
-                alert("Firefox is not supported at this time");
+                alert("Firefox is not supported at this time, please use chrome or a chromium based browser.");
             }
         }
