@@ -23,7 +23,7 @@ GAME_JS_TARGET = $(GAME_JS_DIR)/lpcd.js
 
 .PHONY: help clean html sphinx virtualenv
 
-html: $(GAME_JS_TARGET) minify sphinx
+html: $(GAME_JS_TARGET) sphinx
 
 debug: $(GAME_JS_TARGET) sphinx
 
