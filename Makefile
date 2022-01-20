@@ -53,8 +53,3 @@ $(GAME_JS_TARGET):
 	@echo
 	cat $(GAME_JS_FILES) > $(GAME_JS_TARGET)
 
-minify:
-	@echo "Minifying the LPC javascript..."
-	@echo
-	yuicompressor $(GAME_JS_TARGET) -o $(GAME_JS_TARGET)-min --charset utf-8
-	cat $(GAME_JS_LICENSE) $(GAME_JS_TARGET)-min > $(GAME_JS_TARGET)
