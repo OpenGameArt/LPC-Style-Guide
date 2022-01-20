@@ -1,0 +1,63 @@
+* {
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none;
+}
+
+#lpcd_iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    border: 1px solid black;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#script_dynamics {
+    display: none;
+}
+
+#backdrop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 800px;
+    height: 600px;
+    background-color: black;
+    z-index: 1;
+}
+
+#layer_below, #layer_above, #layer_actors {
+    position: absolute;
+    font-size: 32px; /* set em height */
+    top: 50%;
+    left: 50%;
+    margin-left: 0em; /* use this to simulate the player's x coordinate */
+    margin-top: 0em; /* use this to simulate the player's y coordinate */
+}
+
+#layer_below {
+    z-index: 10;
+}
+#layer_actors {
+    z-index: 20;
+}
+#layer_above {
+    z-index: 30;
+}
+
+#text_overlay {
+    z-index: 50;
+}
+
+.actor {
+    position: absolute;
+    top: 0px; /* actor.x */
+    left: 0px; /* actor.y */
+    margin-left: 0px; 
+    margin-top: 0px;
+    z-index: 20;
+}
