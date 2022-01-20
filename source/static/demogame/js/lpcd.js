@@ -1288,3 +1288,10 @@ LPCD.CHARS.derpy_bat = function(a, d) {
         return true
     }
 };
+
+ window.onload = function() {
+          //  alert(navigator.userAgent);
+            if (navigator.userAgent.indexOf("Firefox") > 0) {
+                alert("Firefox is not supported at this time");
+            }
+        }
